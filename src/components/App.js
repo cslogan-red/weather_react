@@ -175,14 +175,13 @@ class App extends Component {
 	}
 
 	// hourly event handler, triggers hourly lookup
-	_handleHourlySearch( callback) {
+	_handleHourlySearch( hourlyHeight, callback) {
 
-		if ( !this.state.showHourly) {
+		if ( hourlyHeight === 0) {
 			this._showSpinner();
 			this._handleHourlySearchAsync().then( ( result) => {
 				this.setState({
 					showSpinner : result.showSpinner,
-					 showHourly : result.showHourly,
 						 hourly : result.hourly
 				});
 				if ( callback) callback();
@@ -192,7 +191,6 @@ class App extends Component {
 		} else {
 			this.setState({
 				showSpinner : false,
-				 showHourly : false,
 					 hourly : []
 			});
 			if ( callback) callback();
@@ -208,7 +206,6 @@ class App extends Component {
 		if ( RESULT) {
 			retObj = {
 				showSpinner : false,
-				 showHourly : true,
 				     hourly : RESULT.hourly
 			}
 		}
@@ -345,7 +342,6 @@ class App extends Component {
 			this.setState({
 				showSpinner : false,
 				hideForInit : false,
-				 showHourly : false,
 			   locationName : stateObj.locationName,
 				   location : stateObj.location,
 				   rightNow : stateObj.rightNow,

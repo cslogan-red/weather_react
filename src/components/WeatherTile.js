@@ -15,9 +15,9 @@ class WeatherTile extends Component {
     // tile click/touch event handler, managed via parent
     _handleTileClick() {
         
-        if ( this.props.onClick) this.props.onClick( () => {
-            const hourlyHeight = this.state.hourlyHeight;
-            this.setState({ hourlyHeight : hourlyHeight === 0 ? 'auto' : 0});
+        const hourlyHeight = this.state.hourlyHeight;
+        if ( this.props.onClick) this.props.onClick( hourlyHeight, () => {
+            this.setState( { hourlyHeight : hourlyHeight === 0 ? 'auto' : 0});
         });
     }
 

@@ -55,8 +55,9 @@
     justify-content: flex-start;
     overflow-y: hidden;
     overflow-x: scroll;
-    background-color: black;
+    background-color: #111e38;
     margin-top: .25em;
     padding-bottom: .25em;
     border-radius: 5px;
+    min-height: 60px;
 }
