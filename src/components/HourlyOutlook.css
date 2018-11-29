@@ -1,0 +1,31 @@
+.hourly__wrapper {
+
+    display: flex;
+    align-items: center;
+    background-color: #111e38;
+    padding: .15em;
+}
+
+.hourly__container {
+
+    display: flex;
+    flex: 3;
+    flex-direction: column;
+    padding-right: .25em;
+}
+
+.hourly__header {
+
+    font-weight: 500;
+    padding-left: .5em;
+}
+
+.hourly__detail {
+
+    padding-left: .5em;
+}
+
+.hourly__detail span {
+
+    padding-right: .25em;
+}

@@ -1,0 +1,20 @@
+.current__container {
+
+    padding-left: .5em;
+}
+
+.current__header--label {
+
+    padding-bottom: .25em;
+}
+
+.current__tile--container {
+
+    font-size: calc(10px + 2vmin);
+}
+
+.current__rightNow--label {
+
+    font-size: calc(15px + 2vmin);
+    padding-bottom: .5em;
+}

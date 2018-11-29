@@ -1,0 +1,18 @@
+.three-day__container {
+
+    padding-left: .5em;
+    padding-top: .5em;
+}
+
+.three-day__header--label {
+
+    padding-bottom: .25em;
+}
+
+.three-day__tile--container {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: calc(10px + 2vmin)
+}

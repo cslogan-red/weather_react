@@ -1,0 +1,41 @@
+.app__container {
+	
+	background-color: #0a162f;
+  	min-height: 100vh;
+  	font-size: calc(20px + 2vmin);
+  	color: white;
+}
+
+.app__fixed--menu {
+
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: #101215;
+}
+
+.app__search {
+
+	display: flex;
+	align-content: center;
+    justify-content: center;
+}
+
+.app__weather--container {
+
+	display: flex;
+  	flex-direction: column;
+	justify-content: space-evenly;
+	min-height: 80vh;
+	padding-right: .5em;
+	padding-top: .5em;
+	margin-top: calc(40px + 2vmin);
+}
+
+.app__loading--container {
+
+	display: flex;
+	justify-content: center;
+	padding-top: 2em;
+}

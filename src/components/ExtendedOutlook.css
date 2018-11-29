@@ -1,0 +1,38 @@
+.extended__container {
+
+    padding-left: .5em;
+    padding-top: .5em;
+}
+
+.extended__header--label {
+
+    padding-bottom: .25em;
+}
+
+.extended__tile--container {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: calc(10px + 2vmin)
+}
+
+.extended__button--wrapper {
+
+    display: flex;
+    justify-content: center;
+    padding-top: .25em;
+    padding-bottom: .5em;
+}
+
+.extended__button button {
+
+    background-color: #112d63;
+    color: white;
+    line-height: 1.5;
+    border-color: white;
+    border-radius: 5px;
+    font-size: calc(8px + 2vmin);
+    padding: .25em .5em;
+    box-shadow: 0px 0px 2px 2px #757779;
+}
