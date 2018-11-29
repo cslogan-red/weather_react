@@ -365,7 +365,6 @@ class App extends Component {
 			   current = this.state.current,
 			  extended = this.state.extended,
 				hourly = this.state.hourly,
-			showHourly = this.state.showHourly,
 		   showSpinner = this.state.showSpinner,
 		   hideForInit = this.state.hideForInit;
 		return (
